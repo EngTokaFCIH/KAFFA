@@ -1,0 +1,27 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Oswald", sans-serif;
+    background-color: transparent;
+    /* perspective: 600px; */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: "sansita Swashed",system-ui;
+}
+
+header nav.navbar button.navbar-toggler span{
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: var(--bs-green);
+}
+span.text{
+    z-index: 2;
+    transition-duration: 0.5;
+}

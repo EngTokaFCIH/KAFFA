@@ -1,0 +1,131 @@
+@media (max-width: 1300px) {
+    
+    header nav .navbar-toggler {
+        background-color: transparent;
+        border-color: var(--bs-green);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 50px;
+        height: 40px;
+        padding: 0;
+
+        }
+    header nav .navbar-toggler:focus{
+        box-shadow: none;
+    }
+
+    header nav.navbar .navbar-nav{
+        background-color: black;
+        align-items: center;
+        text-align: center;
+        border-radius: 5px;
+        column-gap: 0;
+    }
+    header nav .navbar-nav .nav-item{
+        width: 100%;
+        padding: 10px;
+    } 
+    header .carousel-inner .carousel-item .container .carousel-caption p{
+        width: 90%;
+        font-size: 16px;
+}
+    #About .part2 .box .specialCard{
+        max-width: 280px;
+        margin: auto;
+    }
+    #Services .content p{
+        font-size: 16px
+}
+    #Menu .tab-pane .item .box{
+        width: 280px;
+        margin: auto;
+    }
+    #Book  form{
+         width:300px;
+}
+    #Book  form .box{
+        width: 100%;
+}
+    #Book  form h3{
+        font-size: 20px;
+    }
+    #Book  form *{
+        width: 100%;
+    }
+    .modal .modal-content {
+        width: 100%;
+}
+
+    
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {
+    #Services .content .mug .item {
+        width: 65%;
+        margin: auto;
+}
+    #Book  .col-2 .item{
+        width:80%;
+}
+}
+
+@media (min-width: 577px) and (max-width: 1300px) {
+    #Services .content .mug .item {
+        width: 70%;
+}
+    #Menu .tab-pane .item{
+        width: 100%;
+    }
+    #Menu .tab-pane .item .box{
+        width: initial;
+    }
+    #book .part1 .item{
+        display: none;
+    }
+    #book .part1 .item img{
+        display: none;
+    }
+    #Book  form{
+         width:350px;
+}
+
+    .modal .modal-content {
+        width: 80%;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+    #Services .content .mug .item {
+        width: 50%;
+}
+    #Book  form{
+         width:400px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    header nav.navbar .navbar-nav{
+        background-color: transparent;}
+    header nav.navbar button.navbar-toggler {
+        display: none;
+        } 
+    #About .part2 .box:nth-of-type(3) .body p{
+        padding-inline: 5px;
+    }
+    #Services .content .mug .item {
+        width: 100%;
+}
+    #Book  form{
+         width:500px;
+}
+    .modal .modal-content {
+        width:60%;
+}
+               
+}
+
+@media (min-width: 1300px) and (max-width: 1300px) {
+    
+}

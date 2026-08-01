@@ -1,0 +1,471 @@
+header nav{
+    z-index: 2;
+    background-color: transparent;
+}
+header nav .container .navbar-brand img{
+    width: 80%;
+    margin-top: 10px;
+}
+header nav ul{
+    column-gap: 10px;
+}
+header nav .nav-link{
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+header nav .nav-item a::before,
+header nav .nav-item a span.shape,
+header nav .nav-item a::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 33.33%;
+    background-color: var(--bs-green);
+    position: absolute;
+    transition-duration: 0.5s;
+}
+header nav .nav-item a::before{
+    top:0;
+    left: -100%;
+}
+header nav .nav-item a span.shape{
+    top:calc(100%/3);
+    right:-100%;
+}
+header nav .nav-item a::after{
+    bottom:0;
+    left: -100%;
+}
+
+header nav .nav-item:hover a::before,
+header nav .nav-item:hover a::after{
+    left: 0%;
+}
+header nav .nav-item:hover a span.shape{
+    right: 0;
+}
+header #carouselExampleCaptions .carousel-indicators button{
+    width: 10px;
+    height: 10px;
+    display: block;
+}
+header .carousel-inner .carousel-item::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+}
+header .carousel-inner .carousel-item{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header .carousel-inner .carousel-item:nth-of-type(1){
+    background-image: url("../Images/images/banner1.jpg");
+}
+header .carousel-inner .carousel-item:nth-of-type(2){
+    background-image: url("../Images/images/banner2.jpg");
+}
+header .carousel-inner .carousel-item:nth-of-type(3){
+    background-image: url("../Images/images/banner3.jpg");
+}
+header .carousel-inner .carousel-item:nth-of-type(4){
+    background-image: url("../Images/images/banner4.jpg");
+}
+
+header .carousel-inner .carousel-item .container .carousel-caption{
+    position: initial;
+    
+}
+header .carousel-inner .carousel-item .container .carousel-caption>*{
+    transform: translateY(-30px);
+    opacity:0;
+    transition-duration: 1s;
+}
+header .carousel-inner .carousel-item.active .container .carousel-caption>*{
+    transform: translateY(0);
+    opacity: 1;
+}
+header .carousel-inner .carousel-item .container .carousel-caption p{
+    letter-spacing: 1.5px;
+    transition-delay: 0.2s;
+}
+header .carousel-inner .carousel-item .container .carousel-caption .buttons{
+    transition-delay: 0.4s;
+}
+header .carousel-inner .carousel-item .container .carousel-caption .buttons a{
+    position: relative;
+    overflow: hidden;
+}
+header .carousel-inner .carousel-item .container .carousel-caption .buttons a span{
+    z-index: 2;
+}
+
+header .carousel-inner .carousel-item .container .carousel-caption .buttons a::before,
+header .carousel-inner .carousel-item .container .carousel-caption .buttons a::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* border: 5px solid;
+    border-top-color: #f00;
+    border-bottom-color: #f00;
+    border-right-color: #f00;
+    border-left-color: #f00; */
+    /* border: 5px solid;
+    border-top-color: #f00;
+    border-bottom-color: #0f0;
+    border-right-color: #00f;
+    border-left-color: #fff; */
+    border: 25px solid;
+    border-top-color: var(--bs-green);
+    border-bottom-color: var(--bs-green);
+    border-right-color: var(--bs-green);
+    border-left-color: var(--bs-green);
+    transition-duration: 1s;
+
+}
+header .carousel-inner .carousel-item .container .carousel-caption .buttons a::before{
+    top: 0;
+    left: -100%;
+    border-right-color: transparent;
+
+}
+header .carousel-inner .carousel-item .container .carousel-caption .buttons a:hover::before{
+    top: 0;
+    left: 0%;
+}
+header .carousel-inner .carousel-item .container .carousel-caption .buttons a::after{
+    top: 0;
+    right: -100%;
+    border-left-color: transparent;
+
+}
+header .carousel-inner .carousel-item .container .carousel-caption .buttons a:hover::after{
+    top: 0;
+    right: 0%;
+}
+#About{
+    background-color: var(--bs-green);
+    background-image: url("../Images/images/leaves_pattern.png");
+    background-position: center;
+}
+#About .part1 .item button{
+    position: relative;
+    overflow: hidden;
+}
+#About .part1 .item button::after,
+#About .part1 .item button::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    transition-duration: 0.5s;
+}
+#About .part1 .item button::before{
+    top:-50%;
+}
+#About .part1 .item button:hover::before{
+    top: 0px;
+}
+#About .part1 .item button::after{
+    bottom: -50%;
+}
+#About .part1 .item button:hover::after{
+    bottom: 0;
+}
+#About .part1 .item button:hover span.text{
+    transition-duration: 0.5s;
+
+    color:var(--bs-green);
+}
+#About .part2 .box:nth-of-type(1) .body{
+    background-color: #404042;
+}
+#About .part2 .box:nth-of-type(2) .body{
+    background-color: #88774b;
+}
+#About .part2 .box:nth-of-type(3) .body{
+    background-color: #6d1f37;
+}
+#About .part2 .box .specialCard{
+    overflow: hidden;
+    position: relative;
+}
+#About .part2 .box .specialCard>*{
+    transition-duration: 2s;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#About .part2 .box .specialCard .front{
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#About .part2 .box .specialCard:hover .front{
+    transform: rotateY(180deg);
+}   
+#About .part2 .box .specialCard:hover .back{
+    transform: rotateY(0deg);
+} 
+#About .part2 .box:nth-of-type(1) .specialCard .front{
+    background-image: url("../Images/images/about_front_01.jpg");    
+
+}
+#About .part2 .box:nth-of-type(2) .specialCard .front{
+    background-image: url("../Images/images/about_front_02.jpg");
+}
+#About .part2 .box:nth-of-type(3) .specialCard .front{
+    background-image: url("../Images/images/about_front_03.jpg");
+}
+#About .part2 .box .specialCard .back{
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+#About .part2 .box .body button{
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    padding: 5px 25px;
+    transition-duration: 0.5s;
+}
+#About .part2 .box .body button:hover{
+    background-color: #fff;
+}
+#About .part2 .box .body button>*{
+    transition-duration: 0.5s;
+}
+#About .part2 .box .body button:hover i{
+    margin-left: 5px;
+}
+#About .part2 .box:nth-of-type(1) .body button:hover{
+    color: #404042;
+}
+#About .part2 .box:nth-of-type(2) .body button:hover{
+    color: #88774b;
+}
+#About .part2 .box:nth-of-type(3) .body button:hover{
+    color: #6d1f37;
+}
+#Services{
+    background-image: url("../Images/images/services-beans_bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+#Services::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 0, 0,0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#Services .content img{
+    animation-name: mug-move;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#Services .content p{
+    color: #c2c2c2;
+    font-size: 14px
+}
+#Menu{
+    background-image:url("../Images/images/leaves_pattern.png") ;
+    background-position: center;
+    background-size: contain;
+    background-color: var(--bs-green);
+}
+#Menu ul.nav{
+    width: max-content;
+    margin: auto;
+}
+#Menu ul.nav button{
+    color: #fff;
+    transition-duration: 0.5s;
+}
+#Menu ul.nav button.active,
+#Menu ul.nav button:hover{
+    background-color: #fff;
+    color:var(--bs-green);
+}
+
+#Menu .tab-pane .item .box{
+   position: relative;
+   border-radius: 10px;
+   overflow: hidden; 
+   background-color: #ffffff;
+   transform: scale(0);
+   transition-duration: 1s;
+}
+#Menu .tab-pane.show .item .box{
+    transform: scale(1);
+}
+#Menu .item .box h6,
+#Menu .item .box p{
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+   background-color: var(--bs-green);
+   background-image: url("../Images/images/leaves_pattern.png");
+   padding: 5px 10px;
+   border-radius: 0px 10px 10px 0px;
+   transition-duration: 1s;
+}
+#Menu .item .box:hover h6,
+#Menu .item .box:hover p{
+    transform: translateX(0%);
+}
+#Menu .item .box h6{
+  top: 10px;
+  font-size: 14px;
+}
+#Menu .item .box p{
+    bottom: 10px;
+}
+#Menu .item .box img{
+    margin: auto;
+    display: block;
+    transition-duration: 1s;
+    transform: scale(.8);
+}
+#Menu .item .box:hover img{
+    transform: scale(1);
+}
+#Beans{
+    background-image: url("../Images/images/Beans_ice_drinks_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 500px;
+}
+#Beans::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba( 0, 0,0, 0.5);
+    top: 0;
+    left: 0;
+}
+#Beans h2{
+    text-shadow: 3px 3px 5px black;
+    letter-spacing: 1px;
+    font-size: clamp(25px , 6vw , 150px);
+}
+#Beans p{
+    font-size: clamp(40px , 6vw , 150px);
+}
+#Beans i{
+    cursor: pointer;
+    transition-duration: 0.5s;
+    font-size: 100px;
+}
+#Beans i:hover{
+    color: var(--bs-green);
+}
+
+#Book{
+    background-image: url("../Images/images/Book_black_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#book .part1 .item {
+    height: 100%;
+}
+#book .part1 .item img{
+    height: 100%;
+    display: block;
+    margin: auto
+}
+#Book  form{
+    background-image: url("../Images/images/leaves_pattern.png");
+    background-color: var(--bs-green);
+    padding: 30px 50px;
+    margin: auto;
+    border-radius: 10px;
+    width: 500px;
+}
+#Book  form .box{
+    width: 75%;
+    margin: auto;
+}
+#Book button{
+    background-color: #212529;
+    position: relative;
+    overflow: hidden;
+}
+#Book button:hover{
+    border: 1px solid #fff;
+}
+#Book button::after{
+    content: "";
+    background-color: #212529;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bs-green);
+    top: 100%;
+    left: 0;
+    transition-duration: 0.5s;
+}
+#Book button:hover::after{
+    top:0%;
+}
+#Book button span{
+    position: relative;
+    z-index: 2;
+    transition-duration: 0.5;
+}
+#Book button:hover span{
+    color: #fff;
+}
+footer{
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+
+}
+.modal{
+    overflow: hidden;
+}
+.modal .modal-dialog{
+    max-width: initial/*10%*/;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.modal .modal-content {
+    width:60%;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+    overflow: hidden;
+}
