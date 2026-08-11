@@ -1,8 +1,9 @@
 @keyframes mug-move {
-    from{
+    from {
         transform: translateY(0px);
     }
-    to{
+
+    to {
         transform: translateY(-30px);
     }
 }

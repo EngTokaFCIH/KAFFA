@@ -1,27 +1,32 @@
-html{
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     font-family: "Oswald", sans-serif;
     background-color: transparent;
+    /* !we dont't use perspective property because it affects on modal and prevent it from appearns  */
     /* perspective: 600px; */
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6{
-    font-family: "sansita Swashed",system-ui;
+h6 {
+    font-family: "sansita Swashed", system-ui;
 }
 
-header nav.navbar button.navbar-toggler span{
+header nav.navbar button.navbar-toggler span {
     display: block;
     width: 60%;
     height: 2px;
     background-color: var(--bs-green);
 }
-span.text{
+
+span.text {
+    /* * we put the word in span to give it z-index property to make word appear on border of button  */
     z-index: 2;
     transition-duration: 0.5;
 }

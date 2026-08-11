@@ -2,9 +2,22 @@
 <html lang="en">
 
 <head>
+    <!--start META -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <meta name="description" 
+    content="Discover our delicious coffee, fresh pastries, and cozy atmosphere. Enjoy a perfect coffee experience at our café.">
+    <meta name="keywords" content="cafe, coffee, coffee shop, fresh coffee, pastries, desserts, breakfast">
+    <meta name="author" content="Toka Yasin">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="KAFFA">
+    <meta property="og:description"
+    content="Enjoy delicious coffee, fresh pastries, and a cozy atmosphere at our café.">
+    <meta property="og:type" content="website">
+    <!-- end META -->
     <title>Kaffa</title>
+    <!-- Icon of Title -->
     <link rel="icon" href="./Images/images/icon.png">
     <link rel="stylesheet" href="./CSS/all.css">
     <link rel="stylesheet" href="./CSS/fonts.css">
@@ -16,12 +29,16 @@
 </head>
 
 <body>
+    <!-- start header -->
     <header class="position-relative">
+        <!-- start nav -->
         <nav class="navbar navbar-expand-lg position-absolute w-100 ">
             <div class="container">
+                <!-- nav icon -->
                 <a class="navbar-brand" href="#">
                     <img src="Images/images/logo.png" alt="">
                 </a>
+                <!-- burger button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +46,7 @@
                     <span></span>
                     <span></span>
                 </button>
-
+                <!-- links of nav -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav fs-5 fw-light ms-auto mb-2 mb-lg-0 ">
                         <li class="nav-item">
@@ -60,6 +77,8 @@
                 </div>
             </div>
         </nav>
+        <!-- end nav -->
+        <!-- start slider -->
         <div id="carouselExampleCaptions" data-bs-ride="carousel" class="carousel slide carousel-fade">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
@@ -76,7 +95,8 @@
                     <div class="container position-relative d-flex justify-content-start align-items-center h-100">
                         <div class="carousel-caption text-start  ">
                             <h5 class="display-3 fw-semibold text-success ">Elite Coffee Brands</h5>
-                            <p class="fw-light my-4">Coffee Shop is the place where you can get flavorful coffee strains
+                            <p class="fw-light my-4 ">Coffee Shop is the place where you can get flavorful coffee
+                                strains
                                 from global elite brands and roasters at very affordable price. Lorem ipsum dolor sit
                                 amet elit. Non, explicabo et sit amet.</p>
                             <div class="buttons">
@@ -114,7 +134,7 @@
                             <div class="buttons">
                                 <a href="#Book" class="btn text-light  border border-success fs-5 me-2"><span
                                         class="text-light position-relative">Book a table</span></a>
-                                <a href="#About" class="btn text-success border border-success fs-5 "><span
+                                <a href="#About" class="btn text-light border border-success fs-5 "><span
                                         class="text-light position-relative">About Us</span></a>
                             </div>
                         </div>
@@ -139,7 +159,10 @@
                 </div>
             </div>
         </div>
+        <!-- end slider -->
     </header>
+    <!-- end header -->
+    <!-- start About -->
     <section id="About" class="text-light py-5">
         <div class="container">
             <div class="row">
@@ -225,6 +248,8 @@
             </div>
         </div>
     </section>
+    <!-- end About -->
+    <!-- start Services -->
     <section id="Services" class="text-light py-5">
         <div class="container">
             <div class="title mb-5 text-center position-relative">
@@ -254,8 +279,7 @@
                                 <div class="col-10">
                                     <div class="item">
                                         <h4 class="fs-3 fw-lighter">Wide Assortment</h4>
-                                        <p class="fw-lighter fs-6">Maecenas dapibus mattis eros, at fermentum sapien
-                                            malesuada sit amet. Quisque in sollicitudin eros.</p>
+                                        <p class="fw-lighter fs-6">Cras ut nisl ac sapien interdum scelerisque sed in elit rutrum in massa sed congue eget turpis ligula.</p>
                                     </div>
                                 </div>
                             </div>
@@ -323,6 +347,8 @@
             </div>
         </div>
     </section>
+    <!-- end Services -->
+    <!-- start Menu -->
     <section id="Menu" class="text-light py-5">
         <div class="container">
             <div class="title mb-5 text-center position-relative">
@@ -330,7 +356,9 @@
                 <img src="Images/images/header_img.png" alt="">
             </div>
             <div class="content ">
+                <!-- table-responsive give effect of ( overflow : auto ) and don't make the nav be out of body -->
                 <div class="table-responsive">
+                    <!-- nav of Menu -->
                     <ul class="flex-nowrap  border border-light border-2 rounded-3 nav nav-pills mb-5 p-1 column-gap-2"
                         id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
@@ -365,7 +393,9 @@
                                 Chocolate</button>
                         </li>
                     </ul>
+                    <!-- end nav of Menu -->
                 </div>
+                <!-- start tabs ( body of Menu) -->
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-Coffee" role="tabpanel"
                         aria-labelledby="pills-Coffee-tab" tabindex="0">
@@ -707,33 +737,40 @@
                         </div>
                     </div>
                 </div>
+                <!-- end tabs -->
             </div>
         </div>
     </section>
+    <!-- end Menu -->
+    <!-- start Beans -->
     <section id="Beans" class="text-light py-5 text-center d-flex justify-content-center align-items-center">
         <div class="content position-relative">
-            <h2 class="text-success mb-4">How we Prepare our Beans</h2>
-            <h4 class="display-4 ">Watch Video</h4>
-            <i class="fa-regular fa-circle-play display-1 " data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            <h2 class="text-success ">How we Prepare our Beans</h2>
+            <h4 class="display-4 py-4">Watch Video</h4>
+            <i class="fa-regular fa-circle-play  " data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
         </div>
     </section>
-    <section id="Book" class="text-light ">
+    <!-- end Beans -->
+    <!-- start Book -->
+    <section id="Book" class="text-light pt-5">
         <div class=" container">
             <div class="title mb-5 text-center position-relative">
                 <h2>Book Now</h2>
                 <img src="Images/images/header_img.png" alt="">
             </div>
             <div class="row">
-                <div class="part1 col-12 col-sm-6  col-lg-6 ">
-                    <div class="item h-100">
-                        <img src="Images/images/Book_girl.png" class="img-fluid h-100" alt="">
+                <div class="part1 d-none   d-lg-block col-lg-6 ">
+                    <div class="item ">
                     </div>
                 </div>
                 <div class="part2 col-12 col-sm-6 col-lg-6  ">
                     <div class="item py-4 rounded-2">
+                        <!-- start form -->
                         <form class=" ">
                             <div class="box">
                                 <h3 class="text-center mb-3">Booking a Table</h3>
+                                <!--  form-group like ( mb-3 ) -->
+                                 <!-- start form -->
                                 <div class="form-group">
                                     <input type="text" class="form-control w-100 mb-3 m-auto" name="name" id="name"
                                         required placeholder="Name *">
@@ -750,11 +787,13 @@
                                 </div>
                             </div>
                         </form>
+                        <!-- end form -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- end Book -->
     <footer>
         <p>&copy 2021 SemiCode, Ltd. | All Rights Reserved .</p>
     </footer>
