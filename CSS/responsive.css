@@ -29,6 +29,10 @@
         padding: 10px;
     }
 
+    header .carousel-inner .carousel-item .container .carousel-caption h5 {
+        font-size: 35px;
+    }
+
     header .carousel-inner .carousel-item .container .carousel-caption p {
         width: 90%;
         font-size: 16px;
@@ -69,6 +73,11 @@
 }
 
 @media (min-width: 371px) and (max-width: 1300px) {
+
+    header .carousel-inner .carousel-item .container .carousel-caption h5 {
+        font-size: 40px;
+    }
+
     #Services .content .mug .item {
         width: 65%;
         margin: auto;
@@ -80,6 +89,11 @@
 }
 
 @media (min-width: 577px) and (max-width: 1300px) {
+
+    header .carousel-inner .carousel-item .container .carousel-caption h5 {
+        font-size: 50px;
+    }
+
     #Services .content .mug .item {
         width: 70%;
     }
@@ -107,6 +121,11 @@
 }
 
 @media (min-width: 769px) and (max-width: 1300px) {
+
+    header .carousel-inner .carousel-item .container .carousel-caption h5 {
+        font-size: 60px;
+    }
+
     #Services .content .mug .item {
         width: 50%;
     }
