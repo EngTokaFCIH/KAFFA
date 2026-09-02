@@ -70,6 +70,19 @@
     .modal .modal-content {
         width: 100%;
     }
+
+    a.arrow {
+        width: 30px;
+        height: 30px;
+        right: 5px;
+        bottom: 30px;
+    }
+
+    a.arrow i {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 371px) and (max-width: 1300px) {
@@ -86,6 +99,16 @@
     #Book .col-2 .item {
         width: 80%;
     }
+
+    a.arrow{
+        width: 40px;
+        height: 40px;
+        right: 10px;
+}
+    .up{
+        width: 40px;
+        height: 40px;
+        }
 }
 
 @media (min-width: 577px) and (max-width: 1300px) {
@@ -164,6 +187,10 @@
     .modal .modal-content {
         width: 60%;
     }
+
+    a.arrow{
+        right: 5px;
+}
 
 }
 
